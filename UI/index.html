@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Heating Control</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Heating Control</h1>
+    <form>
+        <button type="button" id="connect">connect!</button>
+        <div>
+            <label for="message">Message to send:</label>
+            <select name="relayValue" id="relayValue">
+                <option value="0">Off</option>
+                <option value="1">On</option>
+            </select>
+            <button type="button" id="send">send!</button>
+        </div>
+    </form>
+
+    <h2>Log Output</h2>
+    <ul id="the-log"></ul>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
